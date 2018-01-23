@@ -4,13 +4,16 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "pretest": "node_modules/.bin/eslint **/*.js",
+    "eslint": "node_modules/.bin/eslint **/*.js",
+    "mocha": "node_modules/.bin/mocha",
+    "istanbul": "node_modules/.bin/nyc --reporter=lcov --reporter=text-lcov npm test",
     "start": "node app.js",
-    "test": "node_modules/.bin/mocha"
+    "pretest": "npm run eslint",
+    "test": "npm run mocha"
   },
   "repository": {
     "type": "git",
-    "url": "http://localhost:6001/test/test-jenkins-repository.git"
+    "url": "https://github.com/kevinlean/node-test-example.git"
   },
   "author": "",
   "license": "ISC",
@@ -23,6 +26,7 @@
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-mocha": "^4.11.0",
     "mocha": "^5.0.0",
+    "nyc": "^11.4.1",
     "should": "^13.2.1",
     "supertest": "^3.0.0"
   }
