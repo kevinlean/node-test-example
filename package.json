@@ -5,11 +5,11 @@
   "main": "app.js",
   "scripts": {
     "eslint": "node_modules/.bin/eslint **/*.js",
-    "mocha": "node_modules/.bin/mocha",
+    "mocha": "node_modules/.bin/mocha --reporter mocha-junit-reporter",
     "istanbul": "node_modules/.bin/nyc --reporter=lcov --reporter=text-lcov npm test",
     "start": "node app.js",
     "pretest": "npm run eslint",
-    "test": "npm run mocha"
+    "test": "npm run mocha "
   },
   "repository": {
     "type": "git",
@@ -26,6 +26,7 @@
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-mocha": "^4.11.0",
     "mocha": "^5.0.0",
+    "mocha-junit-reporter": "^1.16.0",
     "nyc": "^11.4.1",
     "should": "^13.2.1",
     "supertest": "^3.0.0"

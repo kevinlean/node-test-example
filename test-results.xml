@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.05399999999999999" tests="2" failures="0">
+  <testsuite name="Root Suite" timestamp="2018-01-24T15:31:20" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="loading express" timestamp="2018-01-24T15:31:20" tests="2" file="C:\code\LeanFactory\pruebas-concepto\node-test-example\test\test-pages.js" failures="0" time="0.05399999999999999">
+    <testcase name="loading express responds to /" time="0.043" classname="responds to /">
+    </testcase>
+    <testcase name="loading express 404 everything else" time="0.011" classname="404 everything else">
+    </testcase>
+  </testsuite>
+</testsuites>
